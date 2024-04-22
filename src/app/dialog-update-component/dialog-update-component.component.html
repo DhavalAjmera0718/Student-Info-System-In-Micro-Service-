@@ -1,0 +1,76 @@
+<p>dialog-update-component works!</p>
+<div style="border: 1px solid black; " id="maindiv">
+    <div class="container col-md-7 p-4"  style="border: 1px solid black;" id="maindiv2">
+        <h1 class="text-center"> Update Student </h1>
+        <div class="row justify-content-center" >
+            <div class="col-md-6" >
+                <form>
+                    <!-- (ngSubmit)="onSubmit()"> -->
+                    <div class="form-group">
+                        <label for="">Enrollment Number</label>
+                        <input type="text" class="form-control" name="enrollmentNo"
+                            [(ngModel)]="studentEntity.enrollmentNo">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" name="name" [(ngModel)]="studentEntity.name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Address</label>
+                        <input type="text" class="form-control" name="address" [(ngModel)]="studentEntity.address"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Branch</label>
+                        <input type="text" class="form-control" name="branch" [(ngModel)]="studentEntity.branch"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">City</label>
+                        <input type="text" class="form-control" name="city" [(ngModel)]="studentEntity.city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Contact</label>
+                        <input type="text" class="form-control" name="contact" [(ngModel)]="studentEntity.contact"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Gender</label>
+                        <input type="text" class="form-control" name="gender" [(ngModel)]="studentEntity.gender"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" name="password" [(ngModel)]="studentEntity.password"
+                            required>
+                    </div>
+                    <!-- <span style="color:  red ;" *ngIf="password && password.invalid && password.touched"> Please Enter
+                        Valid
+                        Password / More Than 5 Words</span> -->
+                    <div class="form-group">
+                        <label for="">Pincode</label>
+                        <input type="text" class="form-control" name="pincode" [(ngModel)]="studentEntity.pinCode"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Role</label>
+                        <input type="text" class="form-control" name="role" [(ngModel)]="studentEntity.role" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Security Key</label>
+                        <input type="text" class="form-control" name="securityKey"
+                            [(ngModel)]="studentEntity.securityKey" required>
+                    </div>
+
+                    <!-- <mat-dialog-actions style="text-align: center;"> -->
+                        <div class="text-center">
+                            <button class="btn btn-primary" mat-dialog-close type="submit" mat-dialog-close
+                                (click)="onSubmit()">Submit</button>
+                        <button  mat-dialog-close style="color: white; margin-left: 10px;" class="btn btn-danger">No</button>
+                        </div>
+                    <!-- </mat-dialog-actions> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+
+
+#maindiv{
+    /* background-image: url("https://images.unsplash.com/photo-1570876050997-2fdefb00c004?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsYWNrJTIwYmFja2dyb3VuZHN8ZW58MHx8MHx8fDA%3D"); */
+    background-color: black;
+    background-size: cover;
+}
+
+.carousel-item img {
+    width: 100%; /* Consume half of the page width */
+    height: 700px; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center horizontally */
+}
+#registerdiv{
+    background-color: rgba(241, 241, 241, 0.459);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 80px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px 0px white;
+    color:black;
+}
+    
+button{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+button:hover{
+    
+    box-shadow: 0px 0px 20px 0px rgb(11, 239, 255)  ;
+}

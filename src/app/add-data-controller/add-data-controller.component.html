@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+
+    <div id="maindiv">
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <!-- Add more indicators as needed -->
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- Your first carousel item content -->
+                <!-- Example: -->
+                <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/600x200" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <!-- Your second carousel item content -->
+                <!-- Example: -->
+                <img src="https://via.placeholder.com/600x200" class="d-block w-100" alt="...">
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- REGISTRATION FORM -->
+    <div class="container"  id="registerdiv">
+        <h1 class="text-center">Register admin</h1>
+        <hr>    
+        <div class="row justify-content-center" style="padding: 20px;" >
+            <div class="col-md-8" >
+
+                <form action="" (ngSubmit)="onSubmit()" >
+                    
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" name="name" [(ngModel)]="adminModelData.name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Address</label>
+                        <input type="text" class="form-control" name="address" [(ngModel)]="adminModelData.address" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="">City</label>
+                        <input type="text" class="form-control" name="city" [(ngModel)]="adminModelData.city" required> 
+                    </div>
+                    <div class="form-group">
+                        <label for="">Contact</label>
+                        <input type="text" class="form-control" name="contact" [(ngModel)]="adminModelData.contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Gender</label>
+                        <input type="text" class="form-control" name="gender" [(ngModel)]="adminModelData.gender" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" name="password" [(ngModel)]="adminModelData.password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Pincode</label>
+                        <input type="text" class="form-control" name="pincode" [(ngModel)]="adminModelData.pinCode" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="">Security Key</label>
+                        <input type="text" class="form-control" name="securityKey" [(ngModel)]="adminModelData.securityKey" required>
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    <!-- <div class="col-md-7 offset-md-3" id="maindiv">
+
+
+        <form action="" (ngSubmit)="onSubmit()" >
+            <div class="form-control" aria-hidden="true" id ="formtag">
+                <label for="">EnrollmentNo Number</label>
+                <input type="text" class="form-control" name="enroll" [(ngModel)]="students.enrollmentNo" required="">
+                <label for="">Name</label>
+                <input type="text" class="form-control" name="name" [(ngModel)]="students.name" required="">
+                <label for="">Address </label>
+                <input type="text" class="form-control" name="address" [(ngModel)]="students.address" required="">
+                <label for=""> Branch</label>
+                <input type="text" class="form-control" name="branch" [(ngModel)]="students.branch" required="">
+                <label for=""> City</label>
+                <input type="text" class="form-control" name="city" [(ngModel)]="students.city" required=""> 
+                <label for=""> Contact</label>
+                <input type="text" class="form-control" name="contact" [(ngModel)]="students.contact" required="">
+                <label for="">Gender</label>
+                <input type="text" class="form-control" name="enroll" [(ngModel)]="students.gender" required="">
+                <label for="">Password</label>
+                <input type="password" class="form-control" name="password" [(ngModel)]="students.password" required="">
+                <label for="">Pincode</label>
+                <input type="text" class="form-control" name="pincode" [(ngModel)]="students.pinCode" required="">
+                <label for="">Role</label>
+                <input type="text" class="form-control" name="role" [(ngModel)]="students.role" required="">
+                <label for="">Security Key</label>
+                <input type="text" class="form-control" name="securityKey" [(ngModel)]="students.securityKey" required=""><br>
+                <div style="text-align: center;">
+                    <button class="btn  btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+    
+        </form>
+    </div>     -->
+

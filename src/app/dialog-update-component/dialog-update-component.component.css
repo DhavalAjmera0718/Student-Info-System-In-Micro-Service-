@@ -1,0 +1,24 @@
+#maindiv
+{
+    /* background-image: url(""); */
+    background-image: linear-gradient(144deg,#fa9c10, #8114ff 50%,#000000fd);
+    padding: 10px;
+}
+#maindiv:hover
+{
+    /* background-image: url(""); */
+    background-image: linear-gradient(144deg,#000000fd, #8114ff 50%,#fa9c10);
+    transition: background-image 0.7s ease;
+}
+#maindiv2{
+    background-color: rgba(0, 0, 0, 0.281);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px white ; 
+    color: white;
+}
+#maindiv2:hover
+{
+    background-color: rgba(0, 0, 0, 0.575);
+    box-shadow: 0px 0px 20px 0px white ; 
+    transition: background-color 0.7s ease, box-shadow 0.8s ease;
+}

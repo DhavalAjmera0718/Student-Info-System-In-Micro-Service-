@@ -1,0 +1,23 @@
+/* Add this CSS to style the carousel and its images */
+
+
+#carouselExampleIndicators {
+    width: 100%; /* Set the width of the carousel */
+    margin: auto; /* Center the carousel if the parent container is wider */
+    overflow: hidden; /* Hide anything that goes beyond the bounds of the block */
+    border: 5px solid;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.carousel-item img {
+    width: 600px;  /* Explicit width */
+    height: 500px; /* Explicit height */
+    object-fit: cover; /* Cover will ensure the image covers the full area, might crop if the aspect ratio doesn't match */
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end; /* Aligns child elements to the right */
+    padding: 10px; /* Optional padding */
+}

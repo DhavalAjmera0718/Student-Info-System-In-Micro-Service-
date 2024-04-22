@@ -1,0 +1,60 @@
+
+.container{
+    background-color: rgba(0, 0, 0, 0.432);
+    /* background-image: url("https://media.istockphoto.com/id/1457154400/photo/3d-render-motion-line-of-speed-and-power-or-light-trails-high-speed-light-with-curve-movement.webp?b=1&s=170667a&w=0&k=20&c=E0L9cHis9N-KTKmXHZ6Dxzw9YGjLolgfYEdUpVdyNcQ="); */
+    background-size: cover;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 0px 10px 0px white;
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+.container:hover{
+    background-color: rgba(255, 255, 255, 0.685);
+    /* background-image: url("https://images.unsplash.com/photo-1618340338709-027f57b98a16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE5fHxmb2N1cyUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D"); */
+    background-size: cover;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 0px rgb(55, 255, 245);
+    padding: 50px;
+    box-sizing: border-box;
+    transition: background-color 0.8s ease;
+}
+#webpage{
+   background-image: url("https://images.unsplash.com/photo-1464639351491-a172c2aa2911?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   /* background-image: linear-gradient(144deg,#fa7a10, #8114ff 50%,#000000d2); */
+    background-color: rgb(249, 243, 255);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    padding: 100px;
+}
+#formdiv
+{
+    border-radius: 20px;
+    
+}
+#registerInfo {
+        /* background-image: linear-gradient(144deg,#b4fa10, rgb(16, 159, 255) 50%,#ffffffd2); */
+   color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 50px;
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent line breaks */
+    border-right: .15em solid rgb(255, 255, 255); /* Create a blinking cursor effect */
+    animation: revealText 5s steps(16, end); /* Adjust duration as needed */
+    
+}
+
+/* Define the animation */
+@keyframes revealText {
+    from {
+        width: 0; /* Start with 0 width */
+    }
+    to {
+        width: 100%; /* Reveal the text */
+    }
+}

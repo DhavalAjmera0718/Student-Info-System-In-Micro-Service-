@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="maindiv">
+        <div style="background-color: black; color: white;">
+            <h1 class="text-center">Register Student </h1>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <!-- Add more indicators as needed -->
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- Your first carousel item content -->
+                    <!-- Example: -->
+                    <!-- <img src="https://images.squarespace-cdn.com/content/v1/5f03585fdf7f017861ce1adc/eae287ea-43eb-4ec5-90e4-dde90095bca0/Untitled-1.gif"
+                        class="d-block w-100" alt="..."> -->
+                    <img src="https://images.squarespace-cdn.com/content/v1/54000eb8e4b0c3314cbc8905/1478530332282-7TTIHXC7ZWWI06DZCV26/AC_GIF_04.gif"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <!-- Your second carousel item content -->
+                    <!-- Example: -->
+                    <img src="https://via.placeholder.com/600x200" class="d-block w-100" alt="...">
+                </div>
+                <!-- Add more carousel items as needed -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- STUDENT PARTIAL REGISTRATION DIV -->
+        <div class="container" id="registerdiv">
+            <h1 class="text-center">Register Student</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+
+                    <!-- <form [formGroup]="studentData" (ngSubmit)="onSubmit()"> -->
+                    <form [formGroup]="studentData" >
+                       
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" name="name" formControlName="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="text" class="form-control" name="email" formControlName="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" class="form-control" name="password" formControlName="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Date Of Birth</label>
+                            <input type="date" class="form-control" name="dob" formControlName="dob">
+                            <div style="text-align: center;">
+                                <button class="btn btn-primary" routerLink="/login" (click)="onSubmit()" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

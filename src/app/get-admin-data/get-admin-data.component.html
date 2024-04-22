@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+    <title>Document</title>
+</head>
+
+<body   >
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <!-- Add more indicators as needed -->
+        </ol>
+        <div class="carousel-inner" >
+            <div class="carousel-item active">
+                <!-- Your first carousel item content -->
+                <!-- Example: -->
+                <!-- <img src="https://images.squarespace-cdn.com/content/v1/5f03585fdf7f017861ce1adc/eae287ea-43eb-4ec5-90e4-dde90095bca0/Untitled-1.gif"
+                    class="d-block w-100" alt="..."> -->
+                <img src="https://images.unsplash.com/photo-1622899505135-694e8ccffce8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <!-- Your second carousel item content -->
+                <!-- Example: -->
+                <img src="https://images.unsplash.com/photo-1609949242806-e53c8e502460?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/600x200" class="d-block w-100" alt="...">
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--  -->
+<!--  TABLE DATA WITHPAGINATION -->
+<mat-card>
+    <mat-card-header></mat-card-header>
+   
+<div class="container">
+   <div class="col-md-4">
+       <h1 style="text-align: center; "> Admin Details</h1>
+   </div>
+       <div>
+        <mat-card-content>
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Search" #input>
+            </mat-form-field>
+            <button mat-raised-button color="primary" (click)="search(input.value)" style="padding: 28px;">Search</button>
+        </mat-card-content>
+    </div>
+</div> 
+
+
+    <div class="mat-elevation-z8" >
+        <table matSort mat-table [dataSource]="dataSource">
+
+
+
+            <!-- Position Column -->
+            <ng-container matColumnDef="id"  id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> Id </th>
+                <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="name" id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="password" id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> password </th>
+                <td mat-cell *matCellDef="let element"> {{element.napasswordme}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="gender" id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> gender </th>
+                <td mat-cell *matCellDef="let element"> {{element.gender}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="dob" id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> Dob </th>
+                <td mat-cell *matCellDef="let element"> {{element.dob}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="branch" id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> branch </th>
+                <td mat-cell *matCellDef="let element"> {{element.branch}} </td>
+            </ng-container>
+            <ng-container matColumnDef="contact" id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> contact </th>
+                <td mat-cell *matCellDef="let element"> {{element.contact}} </td>
+            </ng-container>
+            <ng-container matColumnDef="address" id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> address </th>
+                <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="city" id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> City </th>
+                <td mat-cell *matCellDef="let element"> {{element.city}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="pinCode" id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> pinCode </th>
+                <td mat-cell *matCellDef="let element"> {{element.pinCode}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="securityKey" id="row">
+                <th mat-sort-header mat-header-cell *matHeaderCellDef> securityKey </th>
+                <td mat-cell *matCellDef="let element"> {{element.securityKey}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="action"  id="row">
+                <th mat-header-cell *matHeaderCellDef> Action </th>
+                <td mat-cell *matCellDef="let element">
+                    <button class="btn btn-primary" (click)="ViewDetailsById(element.id)" style="margin-left: 10px;">View</button>
+                    <button class="btn btn-success" (click)="UpdateAdminData(element.id)" style="margin-left: 10px;">Update</button>
+                    <button class="btn btn-danger" (click)="DeleteAdmin(element.id)" style="margin-left: 10px;">Delete</button> 
+                    <!-- <button class="btn btn-success" routerLink="/builder" style="margin-left: 2px;">Form Builder</button> -->
+
+                    <!-- <tr *ngFor="let s of dataSource"> -->
+                      
+                    <!-- <button mat-raised-button color="primary" (click)="updateEmployee(element.enrollmentNo)">Edit</button> -->
+                    <!-- <button mat-raised-button color="warn" (click)="DeleteUserByAdmin(element.enrollmentNo)">Delete</button> -->
+                    <!-- </tr> -->
+
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayColumns"></tr>
+
+
+        </table>
+    </div>
+    <!-- </mat-card-content> -->
+    <mat-card-footer>
+
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+        </mat-paginator>
+    </mat-card-footer>
+</mat-card>
+
+</body>
+
+</html>

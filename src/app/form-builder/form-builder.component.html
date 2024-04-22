@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Form Builder </h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <form [formGroup]="AdminEntityData" (ngSubmit)="addAdmin()">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" name="name" formControlName="name" >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Address</label>
+                        <input type="text" class="form-control" name="address" formControlName="address" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">City</label>
+                        <input type="text" class="form-control" name="city" formControlName="city" >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Contact</label>
+                        <input type="text" class="form-control" name="contact" formControlName="contact" >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Gender</label>
+                        <input type="text" class="form-control" name="gender" formControlName="gender" >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" name="password" formControlName="password" >
+                    </div>
+                    <div class="form-group">
+                        <label for="">Pincode</label>
+                        <input type="text" class="form-control" name="pincode" formControlName="pinCode" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Security Key</label>
+                        <input type="text" class="form-control" name="securityKey" formControlName="securityKey" >
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="col-md-7 offset-md-3" id="maindiv">
+
+
+        <form action="" (ngSubmit)="onSubmit()" >
+            <div class="form-control" aria-hidden="true" id ="formtag">
+                <label for="">EnrollmentNo Number</label>
+                <input type="text" class="form-control" name="enroll" [(ngModel)]="students.enrollmentNo" required="">
+                <label for="">Name</label>
+                <input type="text" class="form-control" name="name" [(ngModel)]="students.name" required="">
+                <label for="">Address </label>
+                <input type="text" class="form-control" name="address" [(ngModel)]="students.address" required="">
+                <label for=""> Branch</label>
+                <input type="text" class="form-control" name="branch" [(ngModel)]="students.branch" required="">
+                <label for=""> City</label>
+                <input type="text" class="form-control" name="city" [(ngModel)]="students.city" required=""> 
+                <label for=""> Contact</label>
+                <input type="text" class="form-control" name="contact" [(ngModel)]="students.contact" required="">
+                <label for="">Gender</label>
+                <input type="text" class="form-control" name="enroll" [(ngModel)]="students.gender" required="">
+                <label for="">Password</label>
+                <input type="password" class="form-control" name="password" [(ngModel)]="students.password" required="">
+                <label for="">Pincode</label>
+                <input type="text" class="form-control" name="pincode" [(ngModel)]="students.pinCode" required="">
+                <label for="">Role</label>
+                <input type="text" class="form-control" name="role" [(ngModel)]="students.role" required="">
+                <label for="">Security Key</label>
+                <input type="text" class="form-control" name="securityKey" [(ngModel)]="students.securityKey" required=""><br>
+                <div style="text-align: center;">
+                    <button class="btn  btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+    
+        </form>
+    </div>     -->
